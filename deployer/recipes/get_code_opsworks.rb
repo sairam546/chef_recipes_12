@@ -1,6 +1,6 @@
 app = search('aws_opsworks_app').first
 
-git node[:deployer][:app_path] do
+git "#{node[:deployer][:app_path]}/#{app[:name]}" do
   repository app[:app_source][:url]
   revision app[:app_source][:revision]
   user 'deploy'
