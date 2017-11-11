@@ -1,0 +1,4 @@
+# Configuration parameters: MinBodyLength.
+Style/GuardClause:
+  Exclude:
+    - 'resources/msys2_package.rb'
